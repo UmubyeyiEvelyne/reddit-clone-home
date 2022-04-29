@@ -1,7 +1,7 @@
 .sidenav {
     /* width: 200px; */
     font-size: small;
-    box-shadow:  2px 0px 1px 1px #F4f5fa;
+    /* box-shadow:  2px 0px 1px 1px #F4f5fa; */
     border: 0px solid;
     z-index: 1;
     margin-right:20px;
@@ -9,6 +9,7 @@
     margin-top: 10px;
     padding-top: 0px;
     /* border:2px solid red; */
+    text-align: center;
 }
 
 .sidenav a {
@@ -19,6 +20,7 @@
 
 .sidenav__link li {
  padding-top: 10px;
+ font-size: 1rem;
 }
 
 .sidenav hr {
@@ -27,12 +29,23 @@
 }
 
 .sidenav__link h5{
-    padding-top: 15px;
+    padding-top: 30px;
 }
 
-.sidenav__subreddit{
-    padding-left: 0;
+/* .sidenav__link {
+    text-align: left;
+    padding-left: 70px;
+} */
+.subreddits-list{
+    /* border:2px solid red; */
+    text-align: left;
+    padding-left: 50px;
+
 }
+
+/* .sidenav__subreddit{
+    padding-left: 0;
+} */
 
 button{
     /* border:none;

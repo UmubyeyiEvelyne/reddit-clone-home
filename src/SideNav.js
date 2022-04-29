@@ -21,12 +21,14 @@ function SideNav() {
  
       <div className="sidenav__link">
         <h5><strong>Subreddits</strong></h5>
+        <div className="subreddits-list">
         <ul className="sidenav__subreddit">
           
           {subreddits.map(subreddit => (
               <li><Link to={`/r/${subreddit}`}>{subreddit}</Link></li>
           ))}
         </ul>
+        </div>
       </div>
     </div>
   );

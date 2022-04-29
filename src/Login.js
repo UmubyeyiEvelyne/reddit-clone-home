@@ -22,7 +22,7 @@ const UserLogin = () => {
         <div className="row justify-content-center my-5 me-2 ms-2">
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
-                        <label for="username" className="text-left mb-3">Username:</label>
+                        <label for="username" className="text-left mb-3">Email:</label>
                         <input type="text"
                             className="form-control mb-3"
                             id="username" 

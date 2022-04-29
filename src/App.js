@@ -12,7 +12,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function Login() {
   return (
-    <div className="App container w-100 p-3 mt-0">
+    // <div className="App container w-100 p-3 mt-0">
       <Router> 
         <Header />       
           <Switch>  
@@ -30,7 +30,7 @@ function Login() {
             </Route>
           </Switch>
       </Router>
-    </div>
+    // </div>
   );
 }
 

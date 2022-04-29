@@ -10,15 +10,15 @@ const Posts = ({posts}) => {
             {posts.map((post) => (
             <div className="card mb-3" style={{"max-width": "950px","margin-left": "50px", "margin-right": "50px", "margin-top": "10px","padding-top":"20px","padding-bottom":"20px"}}>
                 <div className="row g-0">
-                    <div className="col-md-1">
+                    <div className="col-md-1" style={{"padding-left":"20px"}}>
                         <ImArrowUp className="up" style={{"font-color":"white"}}/>
                         <p style={{"margin-bottom":"0px"}}>{post.votes}</p>
                         <ImArrowDown className="down"/>
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-2">
                         <img src={post.picture} className="img-fluid rounded-start" alt="..." style={{"max-height":"200px"}}/>
                     </div>
-                    <div className="col-md-7" style={{"text-align":"left","position":"relative"}}>
+                    <div className="col-md-8" style={{"text-align":"left","position":"relative"}}>
                         <div className="card-body">
                             <div style={{"display":"inline-block"}}>
                                 <p style={{"display":"inline-block","padding-right":"20px" }}><small className="text-muted">Community: {post.community}</small></p>
