@@ -3,7 +3,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0.5em 0 2.5em;
+  /* margin: 0.5em 0 2.5em; */
+  margin-bottom: 20px;
+  /* border:2px solid red; */
 }
 
 .header__left {
@@ -48,4 +50,15 @@ padding: 10px;
 
 .header__right > .header__user > span {
     margin-right: 10px;
+}
+
+.sidenav__logo {
+  display:  flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reddit-image{
+  width: 80%;
+  /* margin: 10px 0; */
 }
