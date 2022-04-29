@@ -3,6 +3,7 @@ import { useState} from 'react';
 
 
 function CreatePost() {
+    const [ category, setCategory ] = useState();
     const [ title, setTitle ] = useState();
     const [ caption, setCaption ] = useState();
     const [ image, setImage ] = useState();
@@ -10,11 +11,19 @@ function CreatePost() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const post = {title, caption, image};
+        const post = {category, title, caption, image};
         console.log(post);
        
         
     };
+
+    const categories = [
+        "askreddit",
+        "worldnews",
+        "videos",
+        "funny",
+        'askscience'
+      ];
     
     return (
         <div className="container mt-5 mb-5 col-lg-6"  style={{border: '1px solid rgb(252, 69, 4)'}}>
@@ -22,6 +31,19 @@ function CreatePost() {
             <div className="row justify-content-center my-5 me-2 ms-2">
                 {/* <div className="col-lg-"> */}
                     <form onSubmit={handleSubmit}>
+                        <div className="form-group">
+                            <label for="category" className="text-left mb-3">Choose category:</label>
+                            <select type="text"
+                             className="form-control mb-3 custom-select"
+                             id="category" 
+                             placeholder="Category"
+                             value = {category}
+                             onChange={(e) => setCategory(e.target.value)} required>
+                                {categories.map(category => (
+                                <option value={category}>{category}</option>
+                                ))}
+                            </select>
+                        </div>
                         <div className="form-group">
                             <label for="title" className="text-left mb-3">Title:</label>
                             <input type="text"
