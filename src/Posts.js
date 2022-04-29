@@ -25,13 +25,13 @@ const Posts = ({posts}) => {
                                 <p style={{"display":"inline-block","padding-right":"20px"}}><small className="text-muted">posted by: {post.author}</small></p>
                                 <p style={{"display":"inline-block","padding-right":"20px"}}><small className="text-muted">at: {post.date}</small></p>
                             </div>
-                            <h5 className="card-title ">{post.title}</h5>
+                            <h5 className="card-title "><a href="/post" style={{"text-decoration":"none", "color":"black"}}>{post.title}</a></h5>
                             {/* <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>                      */}
                         </div>
                         <div className="comments d-inline-flex" style={{"text-align":"left","position":"absolute","bottom":"0px"}}>
-                            <BiCommentDetail style={{"height":"25px","margin-left":"15px","margin-right":"10px"}}/>
-                            <p style={{"margin-bottom":"0px"}}>{post.comments} comments</p>
-                            </div>
+                            <a href="/post" style={{"text-decoration":"none", "color":"black"}}><BiCommentDetail style={{"height":"25px","margin-left":"15px","margin-right":"10px"}}/></a>
+                            <p style={{"margin-bottom":"0px"}}><a href="/post" style={{"text-decoration":"none", "color":"black"}}>{post.comments} comments</a></p>       
+                        </div>
                     </div>
                 </div>
             </div>

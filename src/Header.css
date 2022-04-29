@@ -44,6 +44,7 @@ padding: 10px;
 }
 .header__user{
   display:none;
+  padding-right: 130px;
 }
 .header__right > i {
     font-size: medium;
@@ -117,7 +118,7 @@ padding: 10px;
 }
 
 #downArrow {
-  color: #0000FF;
+  color: white;
   margin: auto;
   margin-right: 30px;
   margin-left: 20px;
@@ -149,10 +150,10 @@ padding: 10px;
   right: 2px;
   top: 73px;
   background-color: rgb(255, 255, 255);
-  color: #0000FF;
   width: 180px;
   display: block;
   box-shadow: 1px 1px 3px lightgray;
+  padding-bottom: 0px;
 }
 
 .d-icons {
@@ -163,12 +164,7 @@ padding: 10px;
 
 .d-icons .icons-sub {
   float: left;
-  margin: 1px 20px 0px 12px;
-}
-
-.d-icons:hover {
-  background-color: #0000FF;
-  color: white;
+  /* margin: 1px 20px 0px 12px; */
 }
 
 
@@ -207,4 +203,30 @@ padding: 10px;
 .bar{
   text-decoration: none;
   color:white;
+}
+.Authorisation{
+  /* display:none; */
+}
+/* .rightBar{
+  margin-right: 70px;
+} */
+.DropItem{
+  padding-left: 20px;
+  color:black;
+}
+.DropItem:hover{
+    background: rgb(252, 69, 4);
+}
+
+#Posts{
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+#logout{
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.bar{
+  padding-left: 10px;
+  padding-right: 10px;
 }
