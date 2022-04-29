@@ -38,11 +38,13 @@ padding: 10px;
   margin-left: 10px;
 }
 
-.header__right > img {
+.header__user > img {
   width: 25px;
   border-radius: 50%;
 }
-
+.header__user{
+  display:none;
+}
 .header__right > i {
     font-size: medium;
     color: #808080;
@@ -62,3 +64,7 @@ padding: 10px;
   width: 80%;
   /* margin: 10px 0; */
 }
+
+/* .signup{
+  padding-right: 20px;
+} */

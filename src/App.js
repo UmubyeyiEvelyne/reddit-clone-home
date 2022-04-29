@@ -7,20 +7,17 @@ import Posts from "./Posts";
 import SignUp from "./SignUp";
 import useFetch from "./useFetch";
 import CreatePost from "./CreatePost";
+import UserLogin from "./Login";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-function App() {
-  const {data: posts,isPending,error} = useFetch("http://localhost:3005/posts");
+function Login() {
   return (
     <div className="App container w-100 p-3 mt-0">
       <Router> 
-        <Header />
-        <div className="body">
-        {/* <Main>       */}
+        <Header />       
           <Switch>  
             <Route exact path="/">
-              <SideNav />
-              {posts &&  <Posts posts= {posts}/>}
+               <Main/>      
             </Route> 
             <Route exact path="/create">
               <CreatePost/> 
@@ -28,12 +25,13 @@ function App() {
             <Route exact path="/signup">
               <SignUp/> 
             </Route>
+            <Route exact path="/login">
+              <UserLogin/> 
+            </Route>
           </Switch>
-          </div>
-        {/* </Main> */}
       </Router>
     </div>
   );
 }
 
-export default App;
+export default Login;

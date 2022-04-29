@@ -15,8 +15,9 @@ function SideNav() {
   return (
     <div className="sidenav col-md-2">
 
-      <button type="button" class="create-post">Create Post</button>
- 
+      <a href="create">
+        <button type="button" class="create-post">Create Post</button>
+      </a>
  
       <div className="sidenav__link">
         <h5><strong>Subreddits</strong></h5>

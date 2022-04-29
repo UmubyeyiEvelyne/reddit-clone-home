@@ -60,7 +60,7 @@ const SignUp = () => {
                         onChange={(e) => setConfirmPassword(e.target.value)} required/>
                     </div>
                     <button type="submit" className="btn col-md-12 mt-4 mb-5"  style={{backgroundColor: 'rgb(252, 69, 4)', color: '#fff'}} >Sign up</button>
-                    <p className="text-center">Already a redditor? <a href="#"  style={{color: 'rgb(252, 69, 4)'}}>LOG IN</a></p>
+                    <p className="text-center">Already a redditor? <a href="/login"  style={{color: 'rgb(252, 69, 4)'}}>LOG IN</a></p>
                 </form>
             </div>
         </div>
